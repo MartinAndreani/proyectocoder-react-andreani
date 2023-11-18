@@ -1,0 +1,92 @@
+[
+    {
+        "id":1,
+        "title":"Fender Stratocaster",
+        "description":"Guitarra Eléctrica Fender Stratocaster Player Plus Serie Sss Sunburst",
+        "price":2026244,
+        "category":"cuerdas",
+        "image":"../src/assets/gui-elect.webp",
+        "stock":10
+        
+    },
+    {
+        "id":2,
+        "title":"Guitarra Acustica Fender",
+        "description":"Guitarra Acustica Fender 097-011-5021 CD-60S Dread LH Zurdo",
+        "price":153111,
+        "category":"cuerdas",
+        "image":"../src/assets/gui-acus.webp",
+        "stock":8
+        
+    },
+    {
+        "id":3,
+        "title":"Bajo Marcus Miller",
+        "description":"Bajo Marcus Miller Jazz Bass De 5 C V7 Diapason Palisandro",
+        "price":1240600,
+        "category":"cuerdas",
+        "image":"../src/assets/bajo.webp",
+        "stock":5
+        
+    },
+    {
+        "id":4,
+        "title":"Teclado Yamaha",
+        "description":"Teclado Yamaha para escenario 5 octavas Stage Sintetizador YC61        ",
+        "price":300000,
+        "category":"teclados",
+        "image":"../src/assets/teclado.webp",
+        "stock":7
+        
+    },
+    {
+        "id":5,
+        "title":"Teclado Alesis",
+        "description":"Teclado Alesis V49 Mkii 49 Teclas Usb/midi",
+        "price":150000,
+        "category":"teclados",
+        "image":"../src/assets/sinth1.webp",
+        "stock":6
+        
+    },
+    {
+        "id":6,
+        "title":"Sintetizador Korg OPSIX",
+        "description":"Sintetizador FM Alterada 37 Teclas Korg OPSIX 6 Operadores",
+        "price":100000,
+        "category":"teclados",
+        "image":"../src/assets/sinth2.webp",
+        "stock":9
+        
+    },
+    {
+        "id":7,
+        "title":"Bandeja Giradiscos Yamaha",
+        "description":"Bandeja Giradiscos Yamaha MusicCast Vinyl 500",
+        "price":821146,
+        "category":"audio-dj",
+        "image":"../src/assets/tocadisco.webp",
+        "stock":4
+        
+    },
+    {
+        "id":8,
+        "title":"Controlador DJ Pioneer",
+        "description":"Controlador DJ Pioneer DDJ-REV1 USB RCA 2 Canales 8 Pads",
+        "price":419426,
+        "category":"audio-dj",
+        "image":"../src/assets/dj.webp",
+        "stock":3
+        
+    },
+    {
+        "id":9,
+        "title":"Auriculares Beyerdynamic ",
+        "description":"Auriculares Cerrados Profesionales Beyerdynamic DT 770 PRO Over Ear",
+        "price":52509,
+        "category":"audio-dj",
+        "image":"../src/assets/auriculares.webp",
+        "stock":7
+        
+    }
+]
