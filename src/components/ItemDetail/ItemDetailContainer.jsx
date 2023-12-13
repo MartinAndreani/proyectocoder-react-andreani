@@ -1,40 +1,32 @@
 import React, { useState, useEffect} from 'react'
 import ItemDetail from './ItemDetail'
-import instrumentos from "../../data/instrumentos.json"
 import { useParams } from 'react-router-dom'
-
+import {doc, getDoc} from 'firebase/firestore'
+import { db } from '../../services/firebase/firebaseConfig'
 const ItemDetailContainer = () => {
 
-    const [instrument,setInstrument] = useState(null)
+    const [instrument,setInstrument] = useState([])
     const { id } = useParams()
+     
 
-    
-    const getInstrumentById =(id)=>{
-        return new Promise ((resolve)=>{
-            setTimeout(()=>{
-                resolve(instrumentos.find(p => p.id == id))
-            },500)
-        })
-    }
-    
     useEffect(()=>{
-        getInstrumentById(id)
+        const docRef = doc(db,"instrumentos",id)
+        getDoc(docRef)
+        .then((resp) =>{
+            setInstrument(
+                {...resp.data(),id: resp.id}
+            )
+        })
         
-            .then(response =>{
-                console.log(response);
-                setInstrument(response)
-                
+        
+        
+    },[id])
+    ;
+    
 
-        })
-        .catch(error =>{
-            console.log(error);
-        })
-        console.log(id);
-    }, [id] )
- 
   return (
     <div className='flex justify-center py-5'>
-        <ItemDetail {...instrument}/>
+        <ItemDetail  {...instrument}/>
     </div>
   )
 }

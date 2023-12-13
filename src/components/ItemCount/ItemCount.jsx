@@ -13,6 +13,9 @@ const ItemCount = ({stock,initial,onAdd})=>{
             setCant(cant -1)
         }
     }
+
+    
+
     return(
         <div>
             <div className="flex justify-center py-2">
@@ -21,7 +24,8 @@ const ItemCount = ({stock,initial,onAdd})=>{
                 <button className="bg-red-200 h-8 w-8" onClick={increment}>+</button>
             </div>
             <div className="flex justify-center items-center  rounded-xl  py-6 bg-blue-300 w-48 h-12 hover:-translate-y-1 hover:scale-110 duration-300" >
-                <button  onClick={()=> onAdd(cant)} disabled={!stock}>Agregar al carrito</button>
+                <button  onClick={()=> onAdd(cant)} disabled={!stock}  >Agregar al carrito</button>
+                
             </div>
         </div>
     )

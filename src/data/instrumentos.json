@@ -32,7 +32,7 @@
     {
         "id":4,
         "title":"Teclado Yamaha",
-        "description":"Teclado Yamaha para escenario 5 octavas Stage Sintetizador YC61        ",
+        "description":"Teclado Yamaha para escenario 5 octavas Stage Sintetizador YC61",
         "price":300000,
         "category":"teclados",
         "image":"../src/assets/teclado.webp",
